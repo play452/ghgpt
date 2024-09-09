@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: cloudflare
       run: |
-        curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && sudo dpkg -i cloudflared.deb && sudo cloudflared service install eyJhIjoiMWE1MTc4MTE0YTZjOWZmNDllMzZiNmMxNzVlOTZiYjkiLCJ0IjoiY2MxZjY4YjMtY2EwYy00OTYzLTkxZDQtOWQ2MjgwZjM3ZGE2IiwicyI6Ik9HVTNOemN4Tm1JdFpqa3paQzAwT1dKaExXRXhaVE10TkRSaU5EVTFORFZoWldGaSJ9
+        curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && sudo dpkg -i cloudflared.deb && sudo cloudflared service install eyJhIjoiMWE1MTc4MTE0YTZjOWZmNDllMzZiNmMxNzVlOTZiYjkiLCJ0IjoiNzJhYzg0MmYtZmYxMy00YTEwLWI3NGYtYTY3MWQyYTlhZWZkIiwicyI6Ik9HTTVPV1l5WlRJdFlqQTNPUzAwWkRCa0xXSmlaVEl0WVRjME5UWXpNalpoTlRnNSJ9
 
     - name: docker start
       run: |
