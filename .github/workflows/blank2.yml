@@ -1,4 +1,4 @@
-name: chatgpt
+name: tmate
 
 on: [push, workflow_dispatch]
 
@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: install
       run: |
-        apt install tmate
+        sudo apt install tmate
         
     - name: tmate start
       run: |
