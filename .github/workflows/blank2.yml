@@ -1,4 +1,4 @@
-name: tmate
+name: sshx
 
 on: [push, workflow_dispatch]
 
@@ -10,8 +10,9 @@ jobs:
     steps:
     - name: install
       run: |
-        sudo apt install tmate
+        sudo apt install curl -y
+        curl -sSf https://sshx.io/get | sh
         
-    - name: tmate start
+    - name: sshx start
       run: |
-        tmate -F
+        sshx
